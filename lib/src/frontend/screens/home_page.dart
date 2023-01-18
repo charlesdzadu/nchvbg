@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
+import '../../../routes.dart';
 import '../components/input_fields/search_field_widget.dart';
 import '../themes/app_colors.dart';
 import '../utils/project_constants.dart';
@@ -146,7 +148,9 @@ class HomePage extends StatelessWidget {
                             const Gap(10),
                             Expanded(
                               child: InkWell(
-                                onTap: () {},
+                                onTap: () {
+                                  Get.toNamed(AppRoutes.vbgList);
+                                },
                                 child: Container(
                                   padding: const EdgeInsets.all(10),
                                   decoration: BoxDecoration(
@@ -190,6 +194,9 @@ class HomePage extends StatelessWidget {
                 ),
                 const Gap(30),
                 GestureDetector(
+                  onTap: () {
+                    Get.toNamed(AppRoutes.dssrList);
+                  },
                   child: Container(
                       padding: const EdgeInsets.all(20),
                       decoration: BoxDecoration(

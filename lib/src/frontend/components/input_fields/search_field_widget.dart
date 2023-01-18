@@ -6,14 +6,16 @@ import '../../themes/app_colors.dart';
 class SearchInputFieldWidget extends StatelessWidget {
   const SearchInputFieldWidget({
     Key? key,
+    this.filled = true,
   }) : super(key: key);
+  final bool filled;
 
   @override
   Widget build(BuildContext context) {
     return TextField(
       decoration: InputDecoration(
-        fillColor: ProjectColors.white,
-        filled: true,
+        fillColor: ProjectColors.inputBg,
+        filled: filled,
         prefixIcon: const Icon(Iconsax.search_normal_1),
         hintText: "Que voulez vous savoir aujourd'hui ?",
         border: OutlineInputBorder(

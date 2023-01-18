@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'routes.dart';
+import 'src/frontend/themes/app_theme.dart';
 
 class NchVbgApp extends StatelessWidget {
   const NchVbgApp({super.key});
@@ -10,6 +11,8 @@ class NchVbgApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
+      themeMode: ThemeMode.light,
+      theme: ProjectTheme.light,
       getPages: AppRoutes().pages,
     );
   }
