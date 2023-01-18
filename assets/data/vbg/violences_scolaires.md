@@ -1,0 +1,1 @@
+La violence à l’école se définit comme tout type de comportement non désiré, perçue comme étant hostile et nuisible, portant atteinte à l’intégrité physique et psychique d’une personne, à ses droits ou à sa dignité. La violence en milieu scolaire peut être vécue ou commise par des élèves ou par le personnel scolaire.

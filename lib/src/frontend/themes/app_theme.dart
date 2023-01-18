@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_markdown/flutter_markdown.dart';
 import 'app_colors.dart';
 
 class ProjectTheme {
@@ -31,5 +32,16 @@ class ProjectTheme {
         color: ProjectColors.black,
       ),
     ),
+  );
+
+  static MarkdownStyleSheet markdownStyle = MarkdownStyleSheet(
+    textScaleFactor: 1,
+    h1: const TextStyle(fontWeight: FontWeight.bold),
+    h2: const TextStyle(fontWeight: FontWeight.bold),
+    h3: const TextStyle(fontWeight: FontWeight.bold),
+    strong: const TextStyle(fontWeight: FontWeight.bold),
+    pPadding: const EdgeInsets.symmetric(vertical: 15),
+    textAlign: WrapAlignment.spaceAround,
+    p: const TextStyle(height: 1.5),
   );
 }

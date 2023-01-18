@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:get/get.dart';
-import 'package:iconsax/iconsax.dart';
+import 'package:nchvbg/src/frontend/screens/vbg/general_information.dart';
 import 'package:nchvbg/src/frontend/screens/violence_detail_page.dart';
 
+import '../components/cards/violence_item_card.dart';
 import '../components/input_fields/search_field_widget.dart';
-import '../themes/app_colors.dart';
 import '../utils/project_constants.dart';
 
 class VbgListPage extends StatelessWidget {
@@ -26,83 +26,119 @@ class VbgListPage extends StatelessWidget {
         padding: const EdgeInsets.symmetric(
           horizontal: ProjectConstants.marge,
         ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const SearchInputFieldWidget(),
-            const Gap(20),
-            const Text(
-              'Selectionnez un type de violence',
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            const Gap(10),
-            const ViolenceItemCard(
-              title: "Informations générales et conseils à connaitre",
-            ),
-            ViolenceItemCard(
-              title: "Violence Economique",
-              onTap: () {
-                Get.to(const ViolenceDetailPage());
-              },
-            ),
-            const ViolenceItemCard(title: "Violence Psychologique"),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class ViolenceItemCard extends StatelessWidget {
-  const ViolenceItemCard({
-    Key? key,
-    required this.title,
-    this.onTap,
-  }) : super(key: key);
-  final String title;
-  final Function()? onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: onTap,
-      child: Container(
-          padding: const EdgeInsets.all(20),
-          margin: const EdgeInsets.symmetric(vertical: 10),
-          decoration: BoxDecoration(
-            color: ProjectColors.primary,
-            borderRadius: BorderRadius.circular(10),
-          ),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Icon(
-                Iconsax.message_2,
-                color: ProjectColors.white,
-                size: 50,
-              ),
+              const SearchInputFieldWidget(),
               const Gap(20),
-              Expanded(
-                child: Text(
-                  title,
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w700,
-                    height: 1.3,
-                    fontSize: 18,
-                  ),
+              const Text(
+                'Selectionnez un type de violence',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
-              const Gap(20),
-              const Icon(
-                Iconsax.arrow_right_3,
-                color: ProjectColors.white,
+              const Gap(10),
+              ViolenceItemCard(
+                title: "Informations générales et conseils à connaitre",
+                onTap: () {
+                  Get.to(() => VbgGeneralInformation());
+                },
               ),
+              ViolenceItemCard(
+                title: "Violences Physiques",
+                onTap: () {
+                  Get.to(
+                    () => const ViolenceDetailPage(
+                      title: "Violences Physiques",
+                      violenceSlug: "violences_physiques",
+                    ),
+                  );
+                },
+              ),
+              ViolenceItemCard(
+                title: "Violences Verbales",
+                onTap: () {
+                  Get.to(
+                    () => const ViolenceDetailPage(
+                      title: "Violences Verbales",
+                      violenceSlug: "violences_verbales",
+                    ),
+                  );
+                },
+              ),
+              ViolenceItemCard(
+                title: "Violences Psychologiques",
+                onTap: () {
+                  Get.to(
+                    () => const ViolenceDetailPage(
+                      title: "Violences Psychologiques",
+                      violenceSlug: "violences_psychologiques",
+                    ),
+                  );
+                },
+              ),
+              ViolenceItemCard(
+                title: "Violences Sexuelles",
+                onTap: () {
+                  Get.to(
+                    () => const ViolenceDetailPage(
+                      title: "Violences Sexuelles",
+                      violenceSlug: "violences_sexuelles",
+                    ),
+                  );
+                },
+              ),
+              ViolenceItemCard(
+                title: "Violences Economiques",
+                onTap: () {
+                  Get.to(
+                    () => const ViolenceDetailPage(
+                      title: "Violences Economiques",
+                      violenceSlug: "violences_economiques",
+                    ),
+                  );
+                },
+              ),
+              ViolenceItemCard(
+                title: "Violences Culturelles ou Institutionnalisées",
+                onTap: () {
+                  Get.to(
+                    () => const ViolenceDetailPage(
+                      title: "Violences Culturelles ou Institutionnalisées",
+                      violenceSlug: "violences_culturelles",
+                    ),
+                  );
+                },
+              ),
+              ViolenceItemCard(
+                title: "Violences en ligne ou Violences Numériques",
+                onTap: () {
+                  Get.to(
+                    () => const ViolenceDetailPage(
+                      title: "Violences en ligne ou Violences Numériques",
+                      violenceSlug: "violences_en_ligne",
+                    ),
+                  );
+                },
+              ),
+              ViolenceItemCard(
+                title: "Violences en milieu Scolaire",
+                onTap: () {
+                  Get.to(
+                    () => const ViolenceDetailPage(
+                      title: "Violences en milieu Scolaire",
+                      violenceSlug: "violences_scolaires",
+                    ),
+                  );
+                },
+              ),
+              const Gap(50),
             ],
-          )),
+          ),
+        ),
+      ),
     );
   }
 }

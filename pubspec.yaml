@@ -13,6 +13,8 @@ dependencies:
   get: ^4.6.5
   gap: ^2.0.1
   iconsax: ^0.0.8
+  flutter_markdown: ^0.6.13
+  url_launcher: ^6.1.7
 
 
   cupertino_icons: ^1.0.2
@@ -30,6 +32,9 @@ flutter:
   assets:
     - assets/icons/
     - assets/images/
+    - assets/data/vbg/
+    - assets/data/vbg/lois/
+    - assets/data/dssr/
 
   fonts:
     - family: Schyler

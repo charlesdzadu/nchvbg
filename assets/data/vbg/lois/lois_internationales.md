@@ -1,0 +1,6 @@
+- La Déclaration Universelle des Droits de l’Homme ;
+- La Convention relative aux Droits de l’Enfant (CDE) ;
+- La Charte Africaine des Droits et du Bien-être des Enfants (CADBE) ;
+- La Convention sur l’Elimination de toutes les formes de Discrimination à l’égard de la Femme (CEDEF) ;
+- La Plateforme d’action issue de la quatrième conférence mondiale sur les femmes, Beijing (1995) ;
+- Le protocole à la Charte africaine des droits de l’homme et des peuples relatifs aux droits de la femme en Afrique.

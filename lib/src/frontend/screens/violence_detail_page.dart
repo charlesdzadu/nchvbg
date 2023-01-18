@@ -1,21 +1,29 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:gap/gap.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:nchvbg/src/backend/controllers/data_controller.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../themes/app_colors.dart';
+import '../themes/app_theme.dart';
 import '../utils/project_constants.dart';
 
 class ViolenceDetailPage extends StatelessWidget {
-  const ViolenceDetailPage({super.key});
+  const ViolenceDetailPage({
+    required this.violenceSlug,
+    required this.title,
+    super.key,
+  });
+  final String violenceSlug;
+  final String title;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Les violences conjugales"),
+        title: Text(title),
         centerTitle: false,
       ),
       floatingActionButton: ElevatedButton(
@@ -90,8 +98,10 @@ class ViolenceDetailPage extends StatelessWidget {
               ],
             ),
             const Gap(30),
-            const Expanded(
-              child: ViolenceDetailTabBarWidget(),
+            Expanded(
+              child: ViolenceDetailTabBarWidget(
+                violenceSlug: violenceSlug,
+              ),
             ),
           ],
         ),
@@ -103,7 +113,9 @@ class ViolenceDetailPage extends StatelessWidget {
 class ViolenceDetailTabBarWidget extends StatefulWidget {
   const ViolenceDetailTabBarWidget({
     Key? key,
+    required this.violenceSlug,
   }) : super(key: key);
+  final String violenceSlug;
 
   @override
   State<ViolenceDetailTabBarWidget> createState() =>
@@ -141,16 +153,26 @@ class _ViolenceDetailTabBarWidgetState extends State<ViolenceDetailTabBarWidget>
           child: TabBarView(
             controller: tabController,
             children: [
-              Container(),
+              ViolenceDetailDescription(
+                violenceSlug: widget.violenceSlug,
+              ),
               Column(
                 children: const [
                   CustomAccordeonWidget(
                     title: "Les lois internationales",
-                    content: Text('somethin great'),
+                    slug: "lois_internationales",
                   ),
                   CustomAccordeonWidget(
-                    title: "Les lois internationales",
-                    content: Text('somethin great'),
+                    title: "La constitution de 1992",
+                    slug: "constitutions_1992",
+                  ),
+                  CustomAccordeonWidget(
+                    title: "Le code électorales",
+                    slug: "codes_electorales",
+                  ),
+                  CustomAccordeonWidget(
+                    title: "Mesures repressives",
+                    slug: "mesures_repressives",
                   ),
                 ],
               ),
@@ -162,21 +184,57 @@ class _ViolenceDetailTabBarWidgetState extends State<ViolenceDetailTabBarWidget>
   }
 }
 
-class CustomAccordeonWidget extends StatefulWidget {
+class ViolenceDetailDescription extends StatelessWidget {
+  ViolenceDetailDescription({
+    Key? key,
+    required this.violenceSlug,
+  }) : super(key: key);
+  final String violenceSlug;
+  final DataController dataController = Get.find();
+
+  @override
+  Widget build(BuildContext context) {
+    return FutureBuilder<String>(
+      future: dataController.getViolenceData(violenceSlug),
+      builder: (context, snapshot) {
+        if (snapshot.hasData) {
+          return Markdown(
+            data: snapshot.data!,
+            styleSheet: ProjectTheme.markdownStyle,
+            selectable: true,
+            onTapLink: ((text, href, title) {
+              if (href == null) {
+                return;
+              }
+              launchUrl(
+                Uri.parse(href),
+                mode: LaunchMode.externalApplication,
+              );
+            }),
+          );
+        } else if (snapshot.hasError) {
+          return const Center(
+            child: Text("Nous avons rencontré un problème"),
+          );
+        } else {
+          return const Center(
+            child: CircularProgressIndicator(),
+          );
+        }
+      },
+    );
+  }
+}
+
+class CustomAccordeonWidget extends StatelessWidget {
   const CustomAccordeonWidget({
     Key? key,
     required this.title,
-    required this.content,
+    required this.slug,
   }) : super(key: key);
   final String title;
-  final Widget content;
+  final String slug;
 
-  @override
-  State<CustomAccordeonWidget> createState() => _CustomAccordeonWidgetState();
-}
-
-class _CustomAccordeonWidgetState extends State<CustomAccordeonWidget> {
-  bool isOpen = false;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -184,9 +242,13 @@ class _CustomAccordeonWidgetState extends State<CustomAccordeonWidget> {
       children: [
         GestureDetector(
           onTap: () {
-            setState(() {
-              isOpen = !isOpen;
-            });
+            Get.bottomSheet(
+              ViolenceLawBottomSheet(
+                slug: slug,
+                title: title,
+              ),
+              isScrollControlled: true,
+            );
           },
           child: Container(
             decoration: BoxDecoration(
@@ -206,7 +268,7 @@ class _CustomAccordeonWidgetState extends State<CustomAccordeonWidget> {
                 const Gap(20),
                 Expanded(
                   child: Text(
-                    widget.title,
+                    title,
                     style: const TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.w700,
@@ -216,16 +278,92 @@ class _CustomAccordeonWidgetState extends State<CustomAccordeonWidget> {
                   ),
                 ),
                 const Gap(20),
-                Icon(
-                  isOpen ? Iconsax.arrow_down_1 : Iconsax.arrow_right_3,
+                const Icon(
+                  Iconsax.arrow_right_3,
                   color: ProjectColors.white,
                 ),
               ],
             ),
           ),
         ),
-        isOpen ? widget.content : Container()
       ],
+    );
+  }
+}
+
+class ViolenceLawBottomSheet extends StatelessWidget {
+  ViolenceLawBottomSheet({
+    Key? key,
+    required this.slug,
+    required this.title,
+  }) : super(key: key);
+  final String slug;
+  final String title;
+  final DataController dataController = Get.find();
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: Colors.white,
+      padding: const EdgeInsets.only(
+        left: 16,
+        right: 16,
+        top: 50,
+      ),
+      child: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 10),
+            child: Row(
+              children: [
+                IconButton(
+                  onPressed: () {
+                    Get.back();
+                  },
+                  icon: const Icon(Iconsax.close_circle),
+                ),
+                const Gap(20),
+                Text(
+                  title,
+                  style: const TextStyle(
+                      fontSize: 16, fontWeight: FontWeight.bold),
+                ),
+              ],
+            ),
+          ),
+          Expanded(
+            child: FutureBuilder<String>(
+              future: dataController.getVbgLawData(slug),
+              builder: (context, snapshot) {
+                if (snapshot.hasData) {
+                  return Markdown(
+                    data: snapshot.data!,
+                    styleSheet: ProjectTheme.markdownStyle,
+                    selectable: true,
+                    onTapLink: ((text, href, title) {
+                      if (href == null) {
+                        return;
+                      }
+                      launchUrl(
+                        Uri.parse(href),
+                        mode: LaunchMode.externalApplication,
+                      );
+                    }),
+                  );
+                } else if (snapshot.hasError) {
+                  return const Center(
+                    child: Text("Nous avons rencontré un problème"),
+                  );
+                } else {
+                  return const Center(
+                    child: CircularProgressIndicator(),
+                  );
+                }
+              },
+            ),
+          )
+        ],
+      ),
     );
   }
 }
