@@ -11,7 +11,6 @@ class NchVbgApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       getPages: AppRoutes().pages,
-      home: const LoadingStateWidget(),
     );
   }
 }

@@ -11,6 +11,8 @@ dependencies:
   flutter:
     sdk: flutter
   get: ^4.6.5
+  gap: ^2.0.1
+  iconsax: ^0.0.8
 
 
   cupertino_icons: ^1.0.2
@@ -32,21 +34,21 @@ flutter:
   fonts:
     - family: Schyler
       fonts:
-        - asset: assets/fonts/Poppins-Regular.ttf
-        - asset: assets/fonts/Poppins-Italic.ttf
+        - asset: assets/fonts/Poppins/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins/Poppins-Italic.ttf
           style: italic
-        - asset: assets/fonts/Poppins-Bold.ttf
+        - asset: assets/fonts/Poppins/Poppins-Bold.ttf
           weight: 700
-        - asset: assets/fonts/Poppins-BoldItalic.ttf
+        - asset: assets/fonts/Poppins/Poppins-BoldItalic.ttf
           weight: 700
           style: italic
-        - asset: assets/fonts/Poppins-Light.ttf
+        - asset: assets/fonts/Poppins/Poppins-Light.ttf
           weight: 300
-        - asset: assets/fonts/Poppins-LightItalic.ttf
+        - asset: assets/fonts/Poppins/Poppins-LightItalic.ttf
           weight: 300
           style: italic
-        - asset: assets/fonts/Poppins-Medium.ttf
+        - asset: assets/fonts/Poppins/Poppins-Medium.ttf
           weight: 600
-        - asset: assets/fonts/Poppins-MediumItalic.ttf
+        - asset: assets/fonts/Poppins/Poppins-MediumItalic.ttf
           weight: 600
           style: italic
