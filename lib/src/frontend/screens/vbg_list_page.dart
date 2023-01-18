@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:nchvbg/src/frontend/screens/violence_detail_page.dart';
 
 import '../components/input_fields/search_field_widget.dart';
 import '../themes/app_colors.dart';
@@ -26,22 +28,27 @@ class VbgListPage extends StatelessWidget {
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: const [
-            SearchInputFieldWidget(),
-            Gap(20),
-            Text(
+          children: [
+            const SearchInputFieldWidget(),
+            const Gap(20),
+            const Text(
               'Selectionnez un type de violence',
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            Gap(10),
-            ViolenceItemCard(
+            const Gap(10),
+            const ViolenceItemCard(
               title: "Informations générales et conseils à connaitre",
             ),
-            ViolenceItemCard(title: "Violence Economique"),
-            ViolenceItemCard(title: "Violence Psychologique"),
+            ViolenceItemCard(
+              title: "Violence Economique",
+              onTap: () {
+                Get.to(const ViolenceDetailPage());
+              },
+            ),
+            const ViolenceItemCard(title: "Violence Psychologique"),
           ],
         ),
       ),
@@ -53,12 +60,15 @@ class ViolenceItemCard extends StatelessWidget {
   const ViolenceItemCard({
     Key? key,
     required this.title,
+    this.onTap,
   }) : super(key: key);
   final String title;
+  final Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
+      onTap: onTap,
       child: Container(
           padding: const EdgeInsets.all(20),
           margin: const EdgeInsets.symmetric(vertical: 10),
