@@ -110,7 +110,7 @@
             {
                 "name": "Centre Kékéli (Centre de prise en charge des enfants victimes de viol)",
                 "adresse": "Lomé Ahanoukopé",
-                "description": "descript_1.md",
+                "description": "descript_1",
                 "contacts": [
                     "93-31-66-85"
                 ]
@@ -118,7 +118,7 @@
             {
                 "name": "Centre d’écoute et d’assistance juridique des victimes de violences basées sur le genre de Hédzranawé",
                 "adresse": "Hédzranawé",
-                "description": "descript_2.md",
+                "description": "descript_2",
                 "contacts": [
                     "90-12-17-41"
                 ]
@@ -126,7 +126,7 @@
             {
                 "name": "Centre d’écoute et d’assistance juridique des victimes de violences basées sur le genre d'Aného",
                 "adresse": "Aného",
-                "description": "descript_2.md",
+                "description": "descript_2",
                 "contacts": [
                     "91-56-05-60",
                     "91-05-59-00",
@@ -136,7 +136,7 @@
             {
                 "name": "Centre d’écoute et d’assistance juridique des victimes de violences basées sur le genre de Tsévié",
                 "adresse": "Tsévié",
-                "description": "descript_2.md",
+                "description": "descript_2",
                 "contacts": [
                     "90-50-88-47",
                     "90-81-54-57"
@@ -145,7 +145,7 @@
             {
                 "name": "Centre d’écoute et d’assistance juridique des victimes de violences basées sur le genre d'Atakpamé",
                 "adresse": "Atakpamé",
-                "description": "descript_2.md",
+                "description": "descript_2",
                 "contacts": [
                     "90-31-02-61"
                 ]
@@ -153,7 +153,7 @@
             {
                 "name": "Centre d’écoute et d’assistance juridique des victimes de violences basées sur le genre de Bafilo (Centre Fèzirèda de l’Association Feconde)",
                 "adresse": "Bafilo",
-                "description": "descript_2.md",
+                "description": "descript_2",
                 "contacts": [
                     "90-31-84-72"
                 ]
@@ -161,7 +161,7 @@
             {
                 "name": "Centre d’écoute et d’assistance juridique des victimes de violences basées sur le genre de Kpalimé",
                 "adresse": "Kpalimé",
-                "description": "descript_2.md",
+                "description": "descript_2",
                 "contacts": [
                     "90-36-54-58",
                     "93-95-07-93",
@@ -171,7 +171,7 @@
             {
                 "name": "Cliniques ATBEF",
                 "adresse": "Tokoin-gbonvié",
-                "description": "descript_3.md",
+                "description": "descript_3",
                 "contacts": [
                     "22-23-30-00"
                 ]
@@ -179,7 +179,7 @@
             {
                 "name": "Cliniques ATBEF",
                 "adresse": "Agoè -Anomé",
-                "description": "descript_3.md",
+                "description": "descript_3",
                 "contacts": [
                     "22-51-06-78"
                 ]
@@ -187,7 +187,7 @@
             {
                 "name": "Cliniques ATBEF",
                 "adresse": "Davié",
-                "description": "descript_3.md",
+                "description": "descript_3",
                 "contacts": [
                     "90-10-29-65"
                 ]
@@ -195,7 +195,7 @@
             {
                 "name": "Cliniques ATBEF",
                 "adresse": "Atakpamé",
-                "description": "descript_3.md",
+                "description": "descript_3",
                 "contacts": [
                     "24-40-02-18"
                 ]
@@ -203,7 +203,7 @@
             {
                 "name": "Cliniques ATBEF",
                 "adresse": "Sokodé",
-                "description": "descript_3.md",
+                "description": "descript_3",
                 "contacts": [
                     "25-50-02-46"
                 ]
@@ -211,14 +211,14 @@
             {
                 "name": "Cliniques ATBEF",
                 "adresse": "Kara",
-                "description": "descript_3.md",
+                "description": "descript_3",
                 "contacts": [
                     "26-60-05-80"
                 ]
             },
             {
                 "name": "WILDAF",
-                "description": "descript_4.md",
+                "description": "descript_4",
                 "contacts": [
                     "91-99-98-21"
                 ]
@@ -226,7 +226,7 @@
             {
                 "name": "CMS la famille",
                 "adresse": "ZANGUERA",
-                "description": "descript_4.md",
+                "description": "descript_4",
                 "contacts": []
             }
         ]
@@ -237,7 +237,7 @@
             {
                 "name": "Maison de justice de Agoè",
                 "adresse": "Agoè",
-                "description": "descript_5.md",
+                "description": "descript_5",
                 "contacts": [
                     "91- 96- 61-45"
                 ]
@@ -245,7 +245,7 @@
             {
                 "name": "Maison de justice de Baguida",
                 "adresse": "Baguida",
-                "description": "descript_5.md",
+                "description": "descript_5",
                 "contacts": [
                     "91-97-77-18"
                 ]
@@ -253,7 +253,7 @@
             {
                 "name": "Maison de justice de Sanguéra",
                 "adresse": "Sanguéra",
-                "description": "descript_5.md",
+                "description": "descript_5",
                 "contacts": [
                     "91-97-85-55"
                 ]
@@ -261,7 +261,7 @@
             {
                 "name": "Maison de justice de Bafilo",
                 "adresse": "Bafilo",
-                "description": "descript_5.md",
+                "description": "descript_5",
                 "contacts": [
                     "91-97—93-23"
                 ]
@@ -269,7 +269,7 @@
             {
                 "name": "Maison de justice de Cinkassé",
                 "adresse": "Cinkassé",
-                "description": "descript_5.md",
+                "description": "descript_5",
                 "contacts": [
                     "91-97—70-73"
                 ]
@@ -277,7 +277,7 @@
             {
                 "name": "Maison de justice de Dapaong",
                 "adresse": "Dapaong",
-                "description": "descript_5.md",
+                "description": "descript_5",
                 "contacts": [
                     "91-96-58-80"
                 ]
@@ -285,7 +285,7 @@
             {
                 "name": "Maison de justice de Gando",
                 "adresse": "Gando",
-                "description": "descript_5.md",
+                "description": "descript_5",
                 "contacts": [
                     "91-96-60-70"
                 ]
@@ -293,7 +293,7 @@
             {
                 "name": "Maison de justice de Kanté",
                 "adresse": "Kanté",
-                "description": "descript_5.md",
+                "description": "descript_5",
                 "contacts": [
                     "91-97-70-44"
                 ]
@@ -301,7 +301,7 @@
             {
                 "name": "Maison de justice de Kétao",
                 "adresse": "Kétao",
-                "description": "descript_5.md",
+                "description": "descript_5",
                 "contacts": [
                     "91-97-73-70"
                 ]
@@ -309,7 +309,7 @@
             {
                 "name": "Maison de justice de Kpélé-Adéta",
                 "adresse": "Kpélé-Adéta",
-                "description": "descript_5.md",
+                "description": "descript_5",
                 "contacts": [
                     "91-97-88-11"
                 ]
@@ -317,7 +317,7 @@
             {
                 "name": "Maison de justice de Pagouda",
                 "adresse": "Pagouda",
-                "description": "descript_5.md",
+                "description": "descript_5",
                 "contacts": [
                     "91-97-69-65"
                 ]
@@ -325,7 +325,7 @@
             {
                 "name": "Maison de justice de Tohoun",
                 "adresse": "Tohoun",
-                "description": "descript_5.md",
+                "description": "descript_5",
                 "contacts": [
                     "91-97-96-37"
                 ]
@@ -333,7 +333,7 @@
             {
                 "name": "Maison de justice de Tchamba",
                 "adresse": "Tchamba",
-                "description": "descript_5.md",
+                "description": "descript_5",
                 "contacts": [
                     "91-97-93-78"
                 ]
@@ -341,7 +341,7 @@
             {
                 "name": "Maison de justice d'Anié",
                 "adresse": "Anié",
-                "description": "descript_5.md",
+                "description": "descript_5",
                 "contacts": [
                     "91-96-61-08"
                 ]

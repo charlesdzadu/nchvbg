@@ -59,9 +59,17 @@ class DataController extends GetxController {
   }
 
   Future<List<dynamic>> parseJsonFromAssets(String assetsPath) async {
-    print('--- Parse json from: $assetsPath');
     return rootBundle
         .loadString(assetsPath)
         .then((jsonStr) => jsonDecode(jsonStr));
+  }
+
+  Future<String> getContactCenterDescription({
+    required String type,
+    required String description,
+  }) async {
+    String assetPath = "assets/data/$type/description/$description.md";
+    String content = await rootBundle.loadString(assetPath);
+    return content;
   }
 }

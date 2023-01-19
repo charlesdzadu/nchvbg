@@ -1,5 +1,5 @@
 class UsefulContact {
-  String? name;
+  String? categorie;
   String? description;
 
   List<Structure>? structures;
@@ -8,7 +8,7 @@ class UsefulContact {
 
   factory UsefulContact.fromJson(Map<String, dynamic> data) {
     return UsefulContact()
-      ..name = data['name']
+      ..categorie = data['categorie']
       ..description = data['description']
       ..structures = (data['structures'] as List<dynamic>)
           .map((e) => Structure.fromJson(e as Map<String, dynamic>))

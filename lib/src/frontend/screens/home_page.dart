@@ -7,6 +7,7 @@ import '../../../routes.dart';
 import '../components/input_fields/search_field_widget.dart';
 import '../themes/app_colors.dart';
 import '../utils/project_constants.dart';
+import 'usefuls_contacts_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -109,7 +110,9 @@ class HomePage extends StatelessWidget {
                           children: [
                             Expanded(
                               child: InkWell(
-                                onTap: () {},
+                                onTap: () {
+                                  Get.to(() => UsefulsContactsPage());
+                                },
                                 child: Container(
                                   padding: const EdgeInsets.all(10),
                                   decoration: BoxDecoration(

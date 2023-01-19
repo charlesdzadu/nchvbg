@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:get/get.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:nchvbg/src/frontend/screens/dssr_info_detail_page.dart';
 
 import '../components/cards/violence_item_card.dart';
 import '../components/input_fields/search_field_widget.dart';
-import '../themes/app_colors.dart';
 import '../utils/project_constants.dart';
 
 class DssrListPage extends StatelessWidget {

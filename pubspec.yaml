@@ -32,9 +32,11 @@ flutter:
   assets:
     - assets/icons/
     - assets/images/
-    - assets/data/vbg/
     - assets/data/vbg/lois/
+    - assets/data/vbg/
     - assets/data/dssr/
+    - assets/data/dssr/description/
+    - assets/data/vbg/description/
 
   fonts:
     - family: Schyler
