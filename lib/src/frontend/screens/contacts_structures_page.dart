@@ -8,13 +8,14 @@ import 'package:nchvbg/src/backend/models/useful_contact.dart';
 import 'package:nchvbg/src/frontend/themes/app_colors.dart';
 
 class ContactsStructuresPage extends StatelessWidget {
-  const ContactsStructuresPage({
+  ContactsStructuresPage({
     required this.type,
     required this.contact,
     super.key,
   });
   final String type;
   final UsefulContact contact;
+  final DataController dataController = Get.find();
 
   Widget getListStructure() {
     List<Widget> childrens = <Widget>[];
@@ -38,15 +39,58 @@ class ContactsStructuresPage extends StatelessWidget {
     );
   }
 
+  Widget getContactDescriptionMardownWidget() {
+    if (contact.description != null) {
+      return FutureBuilder<String>(
+        future: dataController.getContactCenterDescription(
+          type: type,
+          description: contact.description!,
+        ),
+        builder: ((context, snapshot) {
+          if (snapshot.hasData) {
+            return Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Gap(20),
+                const Text(
+                  "Les services offerts",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const Gap(20),
+                MarkdownBody(data: snapshot.data!),
+              ],
+            );
+          } else if (snapshot.hasError) {
+            return Container();
+          } else {
+            return const Center(
+              child: CircularProgressIndicator(),
+            );
+          }
+        }),
+      );
+    } else {
+      return Container();
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        title: Text('"${contact.categorie}"'),
+      ),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),
           child: Column(
             children: [
+              getContactDescriptionMardownWidget(),
+              const Gap(20),
               getListStructure(),
             ],
           ),

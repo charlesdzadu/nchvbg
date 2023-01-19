@@ -76,6 +76,9 @@ class HomePage extends StatelessWidget {
                     children: [
                       Expanded(
                         child: GestureDetector(
+                          onTap: () {
+                            Get.to(() => UsefulsContactsPage());
+                          },
                           child: Container(
                               padding: const EdgeInsets.all(10),
                               decoration: BoxDecoration(
