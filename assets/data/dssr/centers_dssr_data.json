@@ -1,0 +1,36 @@
+[
+    {
+        "categorie": "FS (formation sanitaire) SONU B (soins obstétricaux et néonatales d’urgence de base)",
+        "description": "USP type I et II et HD type I Pour les formations sanitaires SONU B, la disponibilité des sept (07) fonctions essentielles suivante a été recherchée : - Administration d’antibiotique par voie parentérale, -  Administration d’ocytocique par voie parentérale, -  Administration d’anticonvulsivants par voie parentérale,  - Extraction manuelle du placenta,  - Évacuation de débris intra utérin,  -Accouchement par ventouse ou forceps, - Réanimation néonatale de base (avec ambu et masque)",
+        "structures": [
+            {
+                "name": "Centre de Santé Lomé",
+                "adresse": "Lomé-Commune",
+                "contacts": [
+                    " 22 21 37 31",
+                    " +228 22 22 22 70",
+                    " +228 22 22 22 65"
+                ]
+            },
+            {
+                "name": "CS BèKpota",
+                "adresse": "Lomé-Commune",
+                "contacts": [
+                    " +228 22 22 30 90"
+                ]
+            },
+            {
+                "name": "CS Adakpamé",
+                "adresse": "Lomé-Commune",
+                "contacts": [
+                    "+228 23 38 66 78"
+                ]
+            },
+            {
+                "name": "CMS Amoutivé",
+                "adresse": "Lomé-Commune",
+                "contacts": []
+            }
+        ]
+    }
+]

@@ -1,0 +1,23 @@
+[
+    {
+        "categorie": "Liste des centres d'écoute de l'état",
+        "description": "",
+        "structures": [
+            {
+                "name": "ONE STOP CENTER",
+                "adresse": "Lomé Adidogomé",
+                "contacts": [
+                    "8284",
+                    "90-03-57-90"
+                ]
+            },
+            {
+                "name": "Centre d’écoute et de conseils des victimes des violences basées sur le genre de Novissi",
+                "adresse": "Lomé/Novissi",
+                "contacts": [
+                    "70-16-76-91"
+                ]
+            }
+        ]
+    }
+]
