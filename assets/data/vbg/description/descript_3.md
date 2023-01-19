@@ -1,0 +1,3 @@
+- Prise en charge sociale et psychologique : (accueil, écoute active, counseling, entretien individuel soutien moral, thérapie éducationnelle, psychothérapie de soutien, enquête sociale, visite à domicile réinsertion sociale/familiale, assistance alimentaire, médiation/conciliation, facilitation, suivi téléphonique ou à domicile, gestion de la pension alimentaire et de la garde d’enfants, accompagnement économique et matériel, etc)
+ 
+- Prise en charge médicale (consultations, analyses médicales, frais des ordonnances, etc)

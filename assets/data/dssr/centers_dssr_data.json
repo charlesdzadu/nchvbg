@@ -1,7 +1,7 @@
 [
     {
         "categorie": "FS (formation sanitaire) SONU B (soins obstétricaux et néonatales d’urgence de base)",
-        "description": "USP type I et II et HD type I Pour les formations sanitaires SONU B, la disponibilité des sept (07) fonctions essentielles suivante a été recherchée : - Administration d’antibiotique par voie parentérale, -  Administration d’ocytocique par voie parentérale, -  Administration d’anticonvulsivants par voie parentérale,  - Extraction manuelle du placenta,  - Évacuation de débris intra utérin,  -Accouchement par ventouse ou forceps, - Réanimation néonatale de base (avec ambu et masque)",
+        "description": "fc_sonu_b",
         "structures": [
             {
                 "name": "Centre de Santé Lomé",
@@ -30,7 +30,594 @@
                 "name": "CMS Amoutivé",
                 "adresse": "Lomé-Commune",
                 "contacts": []
+            },
+            {
+                "name": "CMS Cacavéli",
+                "adresse": "Lomé-Commune",
+                "contacts": [
+                    "22 51 43 26"
+                ]
+            },
+            {
+                "name": "CMS Amoutivé",
+                "adresse": "Lomé-Commune",
+                "contacts": []
+            },
+            {
+                "name": "CMS Gbényédji",
+                "adresse": "Lomé-Commune",
+                "contacts": []
+            },
+            {
+                "name": "USP Attitogon",
+                "adresse": "Bas Mono",
+                "contacts": []
+            },
+            {
+                "name": "CMS Adamavo",
+                "adresse": "Adamavo",
+                "contacts": []
+            },
+            {
+                "name": "CMS AgoèNyivé",
+                "adresse": "AgoèNyivé",
+                "contacts": []
+            },
+            {
+                "name": "USP Adidogomé",
+                "adresse": "Adidogomé",
+                "contacts": []
+            },
+            {
+                "name": "CMS Baguida",
+                "adresse": "Baguida",
+                "contacts": []
+            },
+            {
+                "name": "CMS Togblécopé",
+                "adresse": "Togblécopé",
+                "contacts": []
+            },
+            {
+                "name": "CMS Zanguéra",
+                "adresse": "Zanguéra",
+                "contacts": []
+            },
+            {
+                "name": "CHP Tabligbo",
+                "adresse": "Yoto",
+                "contacts": []
+            },
+            {
+                "name": "USP Ahépé",
+                "adresse": "Yoto",
+                "contacts": []
+            },
+            {
+                "name": "Providence Kouvé",
+                "adresse": "Yoto",
+                "contacts": []
+            },
+            {
+                "name": "Polyclinique Tsévié",
+                "adresse": "Zio",
+                "contacts": []
+            },
+            {
+                "name": "USP Djagblé",
+                "adresse": "Zio",
+                "contacts": []
+            },
+            {
+                "name": "CMS Agbelouve",
+                "adresse": "Zio",
+                "contacts": []
+            },
+            {
+                "name": "CMS Wahala",
+                "adresse": "Zio",
+                "contacts": []
+            },
+            {
+                "name": "CMS Moretan",
+                "adresse": "Est Mono",
+                "contacts": []
+            },
+            {
+                "name": "CMS Anié",
+                "adresse": "Anié",
+                "contacts": []
+            },
+            {
+                "name": "CMS Gléi",
+                "adresse": "Gléï",
+                "contacts": []
+            },
+            {
+                "name": "CHP Djarkpanga",
+                "adresse": "Djarkpanga(Mô)",
+                "contacts": []
+            },
+            {
+                "name": "CHP Bafilo",
+                "adresse": "Assoli",
+                "contacts": []
+            },
+            {
+                "name": "CHP Guérin-kouka",
+                "adresse": "Guérin-kouka",
+                "contacts": []
+            },
+            {
+                "name": "CHP Kanté",
+                "adresse": "Kéran",
+                "contacts": []
+            },
+            {
+                "name": "CMS Kabou",
+                "adresse": "Bassar",
+                "contacts": []
+            },
+            {
+                "name": "CMS Adéta",
+                "adresse": "Adéta",
+                "contacts": []
+            },
+            {
+                "name": "CMS Kougnohou",
+                "adresse": "Akébou",
+                "contacts": []
+            },
+            {
+                "name": "CHP Amlamé",
+                "adresse": "Amlamé",
+                "contacts": []
+            },
+            {
+                "name": "CHP Kanté",
+                "adresse": "Kéran",
+                "contacts": []
+            },
+            {
+                "name": "CHP Danyi",
+                "adresse": "Danyi",
+                "contacts": []
+            },
+            {
+                "name": "CMS Tchifama",
+                "adresse": "Blitta",
+                "contacts": []
+            },
+            {
+                "name": "CMS Kétao",
+                "adresse": "Binah",
+                "contacts": []
+            },
+            {
+                "name": "CHP Doufelgou",
+                "adresse": "Doufelgou",
+                "contacts": []
+            },
+            {
+                "name": "CHP Cinkassé",
+                "adresse": "Cinkassé",
+                "contacts": []
+            },
+            {
+                "name": "CMS Tchifama",
+                "adresse": "Blitta",
+                "contacts": []
+            },
+            {
+                "name": "Naki Est",
+                "adresse": "Kpendjal",
+                "contacts": []
+            },
+            {
+                "name": "Polyclinique Dapaong",
+                "adresse": "Tône",
+                "contacts": []
+            },
+            {
+                "name": "CMS Barkoissi",
+                "adresse": "Oti",
+                "contacts": []
+            },
+            {
+                "name": "CMS Gando",
+                "adresse": "Oti",
+                "contacts": []
+            },
+            {
+                "name": "CHP Tandjoare",
+                "adresse": "Tandjoare",
+                "contacts": []
+            },
+            {
+                "name": "CHP Mandouri",
+                "adresse": "Mandouri",
+                "contacts": []
+            },
+            {
+                "name": "CMS Bago",
+                "adresse": "Blitta",
+                "contacts": []
+            },
+            {
+                "name": "CHP Agou",
+                "adresse": "Agou",
+                "contacts": []
+            }
+
+            
+        ]
+    },
+    {
+        "categorie": "FS SONU C (soins obstétricaux et néonatales d’urgence complets)                        ",
+        "description": "fc_sonu_c",
+        "structures": [
+            {
+                "name": "Clinique de l'Aéroport",
+                "adresse": "Lomé-Commune",
+                "contacts": [
+                    "+228 22 26 60 53",
+                    "+228 22 26 90 12"
+                ]
+            },
+            {
+                "name": "HP secondaire Bè",
+                "adresse": "Lomé-Commune",
+                "contacts": [
+                    "22 21 70 71"
+                ]
+            },
+            {
+                "name": "Clinique Biassa",
+                "adresse": "Lomé-Commune",
+                "contacts": [
+                    "96 18 17 96"
+                ]
+            },
+            {
+                "name": "CHU Sylvanus Olympio",
+                "adresse": "Lomé-Commune",
+                "contacts": [
+                    "22 21 25 01"
+                ]
+            },
+            {
+                "name": "HP St Jean de Dieu d’Afagnan",
+                "adresse": "Bas Mono",
+                "contacts": [
+                    "23 32 10 02"
+                ]
+            },
+            {
+                "name": "CHP Aného",
+                "adresse": "Lacs",
+                "contacts": []
+            },
+            {
+                "name": "CHP Vogan",
+                "adresse": "Vo",
+                "contacts": []
+            },
+            {
+                "name": "CHR Tsévié",
+                "adresse": "Zio",
+                "contacts": []
+            },
+            {
+                "name": "CHR Atakpamé",
+                "adresse": "Ogou",
+                "contacts": []
+            },
+            {
+                "name": "CHP KPALIME",
+                "adresse": "Kloto",
+                "contacts": []
+            },
+            {
+                "name": "CHP Notsé",
+                "adresse": "Haho",
+                "contacts": []
+            },
+            {
+                "name": "CHP ordre de Malte",
+                "adresse": "Est Mono",
+                "contacts": []
+            },
+            {
+                "name": "CHP Badou",
+                "adresse": "Badou",
+                "contacts": []
+            },
+            {
+                "name": "CHP AgouNyogbo",
+                "adresse": "Agou",
+                "contacts": []
+            },
+            {
+                "name": "CHP Tohoun",
+                "adresse": "Tohoun",
+                "contacts": []
+            },
+            {
+                "name": "CHP Blitta",
+                "adresse": "Blitta",
+                "contacts": []
+            },
+            {
+                "name": "CHP Sotouboua",
+                "adresse": "Sotouboua",
+                "contacts": []
+            },
+            {
+                "name": "CHP Tchamba",
+                "adresse": "Tchamba",
+                "contacts": []
+            },
+            {
+                "name": "CHR Sokodé",
+                "adresse": "Tchaoudjo",
+                "contacts": []
+            },
+            {
+                "name": "CHP Bassar",
+                "adresse": "Bassar",
+                "contacts": []
+            },
+            {
+                "name": "CHR Kara-Tomdè",
+                "adresse": "Kozah",
+                "contacts": []
+            },
+            {
+                "name": "CHP Mère Enfant SOS Kara",
+                "adresse": "Kozah",
+                "contacts": []
+            },
+            {
+                "name": "CHU Kara",
+                "adresse": "Kozah",
+                "contacts": [
+                    "26 60 05 80"
+                ]
+            },
+            {
+                "name": "CHR Dapaong",
+                "adresse": "Tône",
+                "contacts": []
+            },
+            {
+                "name": "CHP Mango",
+                "adresse": "Mango (Oti)",
+                "contacts": []
+            }
+        ]
+    },
+    {
+        "categorie": "ONG ET ASSOCIATIONS",
+        "descriptions": "ong_associations",
+        "structures": [
+            {
+                "name": "Cliniques ATBEF",
+                "adresse": "Tokoin-Gbonvié",
+                "contacts": [
+                    "22 33 00 00"
+                ]
+            },
+            {
+                "name": "Cliniques ATBEF",
+                "adresse": "Agoè Anomé",
+                "contacts": [
+                    "22 51 06 78"
+                ]
+            },
+            {
+                "name": "Cliniques ATBEF",
+                "adresse": "Davié",
+                "contacts": [
+                    "90 10 29 65"
+                ]
+            },
+            {
+                "name": "Cliniques ATBEF",
+                "adresse": "Atakpamé",
+                "contacts": [
+                    "22 40 02 18"
+                ]
+            },
+            {
+                "name": "Cliniques ATBEF",
+                "adresse": "Sokodé",
+                "contacts": [
+                    "22 50 02 46"
+                ]
+            },
+            {
+                "name": "Cliniques ATBEF",
+                "adresse": "Kara",
+                "contacts": [
+                    "26 60 05 80"
+                ]
+            }
+        ]
+    },
+    {
+        "categorie": "Infirmeries scolaire",
+        "description": "infirmeries_scolaires",
+        "structures": [
+            {
+                "name": "Infirmerie scolaire CEG Atikpa",
+                "adresse": "Non loin de Todman",
+                "contacts": [
+                    "90 20 86 29"
+                ]
+            },
+            {
+                "name": "Infirmerie Scolaire Lycée de Tokoin 1",
+                "adresse": "Tokoin",
+                "contacts": [
+                    "93 95 57 51"
+                ]
+            },
+            {
+                "name": "Infirmerie Scolaire Lycée de Gbegnidji",
+                "adresse": "Gbegnidji",
+                "contacts": [
+                    "90 11 19 85"
+                ]
+            },
+            {
+                "name": "Infirmerie Scolaire CEG Kodjoviakopé",
+                "adresse": "Kodjoviakopé",
+                "contacts": []
+            },
+            {
+                "name": "Infirmerie Scolaire Lycée Technique d’Adidogomé",
+                "adresse": "Adidogomé",
+                "contacts": [
+                    "91 52 49 51"
+                ]
+            },
+            {
+                "name": "Infirmerie Scolaire CRETFP",
+                "adresse": "Région Maritime Zone portuaire",
+                "contacts": [
+                    "91 55 45 42"
+                ]
+            },
+            {
+                "name": "Infirmerie Scolaire Lycée moderne Adidogomé 2",
+                "adresse": "Adidogomé",
+                "contacts": [
+                    "99 52 52 69"
+                ]
+            },
+            {
+                "name": "Infirmerie Scolaire Lycée d’Agoè",
+                "adresse": "Agoè",
+                "contacts": [
+                    "92 61 57 78"
+                ]
+            },
+            {
+                "name": "Infirmerie Scolaire Lycée d’Enseignement Technique Professionel Attiégou",
+                "adresse": "Attiégou",
+                "contacts": [
+                    "90 30 91 83"
+                ]
+            },
+            {
+                "name": "Infirmerie Universitaire de Lomé",
+                "adresse": "Universitaire de Lomé",
+                "contacts": []
+            },
+            {
+                "name": "Infirmerie Scolaire CRETFP Kpalimé",
+                "adresse": "Kpalimé",
+                "contacts": [
+                    "90 10 70 13"
+                ]
+            },
+            {
+                "name": "Infirmerie Scolaire Lycée de Kpodzi",
+                "adresse": "Kpalimé",
+                "contacts": [
+                    "91 75 56 14"
+                ]
+            },
+            {
+                "name": "Infirmerie Scolaire LETP Atakpamé",
+                "adresse": "Atakpamé",
+                "contacts": [
+                    "90 88 89 19"
+                ]
+            },
+            {
+                "name": "Infirmerie Scolaire CEG Notsè Ville 1",
+                "adresse": "Notsè",
+                "contacts": [
+                    "90 25 75 89"
+                ]
+            },
+            {
+                "name": "Infirmerie Scolaire LETP SOKODE",
+                "adresse": "Sokode",
+                "contacts": [
+                    "91 82 30 41"
+                ]
+            },
+            {
+                "name": "Infirmerie Scolaire CEG Dapaong Ville",
+                "adresse": "Dapaong",
+                "contacts": [
+                    "90 00 29 76"
+                ]
+            },
+            {
+                "name": "Infirmerie Scolaire CRETFP Dapaong",
+                "adresse": "Dapaong",
+                "contacts": [
+                    "92 60 88 20"
+                ]
+            },
+            {
+                "name": "Infirmerie Scolaire Lycée d’Enseignement Technique et Professionnel de Mango",
+                "adresse": "Mango",
+                "contacts": []
+            },
+            {
+                "name": "Infirmerie Scolaire Lycée de Pya",
+                "adresse": "Pya",
+                "contacts": [
+                    "90 46 65 72"
+                ]
+            },
+            {
+                "name": "Infirmerie Scolaire CRETFP Kara",
+                "adresse": "Kara",
+                "contacts": []
+            },
+            {
+                "name": "Infirmerie Universitaire de Kara",
+                "adresse": "Université de Kara",
+                "contacts": []
+            },
+            {
+                "name": "Infirmerie Scolaire Lycée de Vogan",
+                "adresse": "Vogan",
+                "contacts": []
+            },
+            {
+                "name": "Infirmerie Scolaire CEG Tsévié Ville 1",
+                "adresse": "Tsévié",
+                "contacts": [
+                    "91 07 76 58"
+                ]
+            },
+            {
+                "name": "Infirmerie Scolaire Lycée du 2 février",
+                "adresse": "Agbalepedo",
+                "contacts": [
+                    "92 98 02 70"
+                ]
+            },
+            {
+                "name": "Infirmerie Scolaire CEG Nyekonakpoé",
+                "adresse": "Atakpamé",
+                "contacts": []
+            },
+            {
+                "name": "Infirmerie Scolaire Collège d’Enseignement Technique Kantè",
+                "adresse": "Kantè",
+                "contacts": [
+                    "91 76 58 24"
+                ]
             }
         ]
     }
 ]
+
+	 
