@@ -82,7 +82,7 @@ class HomePage extends StatelessWidget {
                           child: Container(
                               padding: const EdgeInsets.all(10),
                               decoration: BoxDecoration(
-                                color: ProjectColors.primary,
+                                color: const Color(0XFF2077FF),
                                 borderRadius: BorderRadius.circular(10),
                               ),
                               child: Column(
@@ -119,7 +119,7 @@ class HomePage extends StatelessWidget {
                                 child: Container(
                                   padding: const EdgeInsets.all(10),
                                   decoration: BoxDecoration(
-                                    color: ProjectColors.green,
+                                    color: const Color(0XFF18B77D),
                                     borderRadius: BorderRadius.circular(10),
                                   ),
                                   child: Row(
@@ -160,7 +160,7 @@ class HomePage extends StatelessWidget {
                                 child: Container(
                                   padding: const EdgeInsets.all(10),
                                   decoration: BoxDecoration(
-                                    color: ProjectColors.blue,
+                                    color: const Color(0XFFFF9D00),
                                     borderRadius: BorderRadius.circular(10),
                                   ),
                                   child: Row(
@@ -206,7 +206,7 @@ class HomePage extends StatelessWidget {
                   child: Container(
                       padding: const EdgeInsets.all(20),
                       decoration: BoxDecoration(
-                        color: ProjectColors.primary,
+                        color: const Color(0XFFFFB200),
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: Row(

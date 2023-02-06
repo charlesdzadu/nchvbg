@@ -49,7 +49,7 @@ class ViolenceDetailPage extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10),
                           border: Border.all(
                             color: ProjectColors.primary,
-                            strokeAlign: StrokeAlign.inside,
+                            strokeAlign: BorderSide.strokeAlignInside,
                             width: 2,
                           ),
                           image: const DecorationImage(
@@ -392,7 +392,7 @@ class SlideButtonWidget extends StatelessWidget {
           borderRadius: BorderRadius.circular(20),
           border: Border.all(
             color: ProjectColors.primary,
-            strokeAlign: StrokeAlign.outside,
+            strokeAlign: BorderSide.strokeAlignOutside,
             width: 2,
           ),
         ),
