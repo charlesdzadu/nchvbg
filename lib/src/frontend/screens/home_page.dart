@@ -237,6 +237,24 @@ class HomePage extends StatelessWidget {
                         ],
                       )),
                 ),
+                const Gap(30),
+                Container(
+                  height: 200,
+                  padding: const EdgeInsets.all(20),
+                  decoration: BoxDecoration(
+                    color: Colors.green,
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Row(
+                    children: [
+                      Column(
+                        children: const [
+                          Text('Cool'),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
               ],
             ),
           ),

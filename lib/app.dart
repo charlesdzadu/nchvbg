@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'routes.dart';
 import 'src/frontend/themes/app_theme.dart';
 
+// Finish NCH VBG
 class NchVbgApp extends StatelessWidget {
   const NchVbgApp({super.key});
 
