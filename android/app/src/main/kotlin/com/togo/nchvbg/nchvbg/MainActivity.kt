@@ -1,4 +1,4 @@
-package com.nchvbg.brydg
+package com.togo.nchvbg.nchvbg
 
 import io.flutter.embedding.android.FlutterActivity
 

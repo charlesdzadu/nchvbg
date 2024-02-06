@@ -54,7 +54,7 @@ class ViolenceDetailPage extends StatelessWidget {
                           ),
                           image: const DecorationImage(
                             image: NetworkImage(
-                              "https://www.plumedafrique.com/wp-content/uploads/2021/11/Lutte-contre-les-violences-basees-sur-le-genre.jpg",
+                              "https://storage.googleapis.com/makifaa_public/tw900_femmes-disant-non-avec-la-main.webp",
                             ),
                             fit: BoxFit.cover,
                           ),
@@ -66,8 +66,8 @@ class ViolenceDetailPage extends StatelessWidget {
                 Positioned(
                   bottom: 10,
                   left: (Get.width / 2) - 60,
-                  child: Row(
-                    children: const [
+                  child: const Row(
+                    children: [
                       SlideButtonWidget(
                         isAstive: true,
                         activeColor: ProjectColors.white,
@@ -156,8 +156,8 @@ class _ViolenceDetailTabBarWidgetState extends State<ViolenceDetailTabBarWidget>
               ViolenceDetailDescription(
                 violenceSlug: widget.violenceSlug,
               ),
-              Column(
-                children: const [
+              const Column(
+                children: [
                   CustomAccordeonWidget(
                     title: "Les lois internationales",
                     slug: "lois_internationales",

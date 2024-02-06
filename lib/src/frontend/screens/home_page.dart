@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:nchvbg/src/frontend/components/custom_video_player.dart';
+import 'package:nchvbg/src/frontend/screens/youtube_player.dart';
 
 import '../../../routes.dart';
 import '../components/input_fields/search_field_widget.dart';
@@ -50,7 +52,9 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                     IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.to(() => const YoutubeVideoPlayerPage());
+                      },
                       icon: const Icon(
                         Iconsax.menu,
                         color: ProjectColors.white,
@@ -69,7 +73,15 @@ class HomePage extends StatelessWidget {
             ),
             child: Column(
               children: [
-                const Gap(30),
+                const Gap(20),
+                Container(
+                  height: 200,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: const CustomVideoPayer(),
+                ),
+                const Gap(20),
                 SizedBox(
                   height: 160,
                   child: Row(
@@ -85,9 +97,9 @@ class HomePage extends StatelessWidget {
                                 color: const Color(0XFF2077FF),
                                 borderRadius: BorderRadius.circular(10),
                               ),
-                              child: Column(
+                              child: const Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                children: const [
+                                children: [
                                   Icon(
                                     Iconsax.message_2,
                                     color: ProjectColors.white,
@@ -122,10 +134,10 @@ class HomePage extends StatelessWidget {
                                     color: const Color(0XFF18B77D),
                                     borderRadius: BorderRadius.circular(10),
                                   ),
-                                  child: Row(
+                                  child: const Row(
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceBetween,
-                                    children: const [
+                                    children: [
                                       Expanded(
                                         child: Padding(
                                           padding: EdgeInsets.only(
@@ -163,10 +175,10 @@ class HomePage extends StatelessWidget {
                                     color: const Color(0XFFFF9D00),
                                     borderRadius: BorderRadius.circular(10),
                                   ),
-                                  child: Row(
+                                  child: const Row(
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceBetween,
-                                    children: const [
+                                    children: [
                                       Expanded(
                                         child: Padding(
                                           padding: EdgeInsets.only(
@@ -198,7 +210,7 @@ class HomePage extends StatelessWidget {
                     ],
                   ),
                 ),
-                const Gap(30),
+                const Gap(10),
                 GestureDetector(
                   onTap: () {
                     Get.toNamed(AppRoutes.dssrList);
@@ -209,9 +221,9 @@ class HomePage extends StatelessWidget {
                         color: const Color(0XFFFFB200),
                         borderRadius: BorderRadius.circular(10),
                       ),
-                      child: Row(
+                      child: const Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
-                        children: const [
+                        children: [
                           Icon(
                             Iconsax.message_2,
                             color: ProjectColors.white,
@@ -238,23 +250,6 @@ class HomePage extends StatelessWidget {
                       )),
                 ),
                 const Gap(30),
-                Container(
-                  height: 200,
-                  padding: const EdgeInsets.all(20),
-                  decoration: BoxDecoration(
-                    color: Colors.green,
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  child: Row(
-                    children: [
-                      Column(
-                        children: const [
-                          Text('Cool'),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
               ],
             ),
           ),

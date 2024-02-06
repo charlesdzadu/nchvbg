@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:gap/gap.dart';
 import 'package:get/get.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:nchvbg/src/backend/controllers/data_controller.dart';
 import 'package:nchvbg/src/backend/models/useful_contact.dart';
 import 'package:nchvbg/src/frontend/components/input_fields/search_field_widget.dart';

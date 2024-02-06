@@ -236,7 +236,7 @@ class ContactStructureItemWidget extends StatelessWidget {
                   child: const Text('Voir les services'),
                 )
               : Container(),
-          Row(),
+          const Row(),
         ],
       ),
     );

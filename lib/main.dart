@@ -8,6 +8,7 @@ import 'app.dart';
 import 'src/backend/controllers/app_controller.dart';
 
 void main(List<String> args) {
+  WidgetsFlutterBinding.ensureInitialized();
   runZonedGuarded<Future<void>>(
     () async {
       Get.put(AppController());
